@@ -5,3 +5,12 @@ dieselCar.logCarProperties();
 
 const electricCar = new CarBlueprint("Modrá", "EV 160kW", "Elektřina", "Blesk");
 electricCar.logCarProperties();
+dieselCar.logCarProperties();
+
+dieselCar.repaint("Šedá");
+
+dieselCar.logCarProperties();
+electricCar.logCarProperties();
+
+const dieselCarEngine = dieselCar.getEngine();
+console.log("Motor Ropáku: " + dieselCarEngine);
